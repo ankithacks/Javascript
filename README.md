@@ -1,0 +1,1 @@
+This repository contains the basics learning that may arise in INTERVIEW specific areas and mistakes that are made while learning them. Made this repo a public so that it may help even 0.5% of the developer community😏
