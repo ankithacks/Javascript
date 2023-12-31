@@ -24,3 +24,22 @@ console.log("B" , myArr)
 
 const myar2=myArr.splice(1,3)    //this excludes the sliced elements and here original array gets affected
 console.log("B" , myArr) 
+
+
+const name=["abc", "bca", "computers", "science", "engineering"]
+const name1=["ab", "bc", "computer", "science 1", "engineering 1"]
+// name.push(name1)
+// console.log(name)  
+// the output would be :- [ 'abc','bca','computers','science','engineering',[ 'ab', 'bc', 'computer', 'science 1', 'engineering 1' ]  .....this is not a good way of array merging
+// const add= name.concat(name1)
+// console.log(add)  //the output would be ['abc','bca','computers','science','engineering','ab','bc','computer','science 1','engineering 1']  which is a good way to solve
+
+const all_new=[...name1, ...name] ///this is spread operator
+// console.log(all_new)   ///this gives the same output as concat and preferred in industry
+
+const nested_array=[1,4,3,[5,7,5],45,768,[4,[5,7,6]]]
+const useable_array=nested_array.flat(Infinity)
+// console.log(useable_array)
+
+console.log(Array.isArray("github"))  //returns FALSE
+console.log(Array.from("github"))    //converts the input to array [ 'g', 'i', 't', 'h', 'u', 'b' ]
